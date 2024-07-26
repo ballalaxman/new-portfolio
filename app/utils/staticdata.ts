@@ -58,3 +58,23 @@ export const SocialMediaItems = [
     url: "https://www.instagram.com/laxmanballa/"
   }
 ];
+
+export const WielabsFulltimeTechStack = [
+  "Javascript",
+  "React Js",
+  "Next Js",
+  "Redux-toolkit",
+  "Tailwind Css",
+  "Material UI",
+  "Styled-components",
+  "Axios"
+];
+
+export const WielabsInternshipTechStack = [
+  "Javascript",
+  "React Js",
+  "Axios",
+  "Firebase",
+  "Sass",
+  "Material UI"
+];
