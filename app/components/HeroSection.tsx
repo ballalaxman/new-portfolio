@@ -1,12 +1,17 @@
 import React from "react";
 import { calculateDuration } from "../utils/helpers";
 import { LuScroll } from "react-icons/lu";
+import Image from "next/image";
+import skills from "@/public/skills.png";
 
 const HeroSection = () => {
   const age = calculateDuration(new Date(2022, 11, 1)); // December 01, 2022
 
   return (
-    <section className="h-[80vh] w-full px-4 lg:max-w-[1440px] lg:px-0 flex flex-col md:flex-row items-center justify-between mx-auto">
+    <section
+      className="h-auto sm:h-[80vh] w-full px-4 lg:max-w-[1440px] lg:px-0 flex flex-col md:flex-row items-center justify-between mx-auto"
+      id="home"
+    >
       <div className="max-w-2xl">
         <h2 className="text-lg sm:text-2xl font-bold text-[#cdcdcd] my-2">
           Hey, I&apos;m Laxman
@@ -27,11 +32,18 @@ const HeroSection = () => {
           transforming innovative ideas into functional and intuitive digital
           experiences.
         </p>
-        <button className="bg-yellow-500 px-6 py-3 flex items-center justify-center gap-4 text-black rounded-lg text-sm sm:text-lg tracking-wide">
-          <LuScroll size={"1.5rem"} /> View Resume
-        </button>
+        <a
+          href="https://drive.google.com/file/d/1ex1txzCIsBOi2KuiHId-8B9Vfq66t34t/view?usp=sharing"
+          target="_blank"
+        >
+          <button className="bg-yellow-500 px-6 py-3 flex items-center justify-center gap-4 text-black rounded-lg text-sm sm:text-lg tracking-wide">
+            <LuScroll size={"1.5rem"} /> View Resume
+          </button>
+        </a>
       </div>
-      <div className="">Image</div>
+      <div className="">
+        <Image src={skills} alt="skills" />
+      </div>
     </section>
   );
 };
