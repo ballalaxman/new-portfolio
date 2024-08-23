@@ -15,7 +15,11 @@ interface Props {
 
 const ProjectCard: React.FC<Props> = ({ project }) => {
   return (
-    <div className="border border-opacity-50 border-yellow-200 rounded-md w-full sm:max-w-96 px-1">
+    <div
+      className="border border-opacity-50 border-yellow-200 rounded-md w-full sm:max-w-96 px-1 shadow-2xl"
+      data-aos="zoom-in"
+      data-aos-duration="1000"
+    >
       <div className="relative w-full h-56">
         <Image src={project.image} alt="moviehunt" fill objectFit="cover" />
       </div>

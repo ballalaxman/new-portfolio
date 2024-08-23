@@ -5,14 +5,14 @@ import Image from "next/image";
 import skills from "@/public/skills.png";
 
 const HeroSection = () => {
-  const age = calculateDuration(new Date(2022, 11, 1)); // December 01, 2022
+  const age = calculateDuration(new Date(2022, 12, 1)); // December 01, 2022
 
   return (
     <section
       className="h-auto sm:h-[80vh] w-full px-4 lg:max-w-[1440px] lg:px-0 flex flex-col md:flex-row items-center justify-between mx-auto"
       id="home"
     >
-      <div className="max-w-2xl">
+      <div className="max-w-2xl" data-aos="fade-up" data-aos-duration="1000">
         <h2 className="text-lg sm:text-2xl font-bold text-[#cdcdcd] my-2">
           Hey, I&apos;m Laxman
         </h2>
@@ -41,7 +41,7 @@ const HeroSection = () => {
           </button>
         </a>
       </div>
-      <div className="">
+      <div className="" data-aos="zoom-in" data-aos-duration="1000">
         <Image src={skills} alt="skills" />
       </div>
     </section>
