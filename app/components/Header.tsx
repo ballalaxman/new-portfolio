@@ -37,7 +37,7 @@ const Header = () => {
           <IoClose size={"1.75rem"} onClick={() => setOpenNavItems(false)} />
         )}
         {openNavItems && (
-          <div className="bg-[#292929] rounded-[10px] px-5 py-7 absolute top-[4rem] right-5 flex flex-col items-start justify-start">
+          <div className="bg-[#292929] rounded-[10px] px-5 py-7 absolute top-[4rem] right-5 flex flex-col items-start justify-start z-20">
             <div className="flex items-center justify-center gap-3">
               <Image
                 src={profile}
