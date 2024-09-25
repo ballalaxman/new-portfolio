@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import {
   WielabsFulltimeTechStack,
@@ -13,7 +15,15 @@ const Experience = () => {
       <h1 className="text-5xl sm:text-[6.8rem] md:text-9xl font-extrabold tracking-wide opacity-[0.05] absolute left-5 top-0 sm:top-8 sm:left-0">
         Experience
       </h1>
-      <div className="flex flex-col gap-12 sm:gap-16 pt-0 sm:pt-32">
+      <div className="flex flex-col gap-12 sm:gap-16 pt-0 sm:pt-32 relative">
+        {/* animated line */}
+        {/* <motion.div
+          ref={ref} // Attach the observer ref
+          initial={{ height: "0%" }}
+          animate={controls} // Connect the controls for animation
+          className="absolute w-[3px] left-[13%] bg-yellow-200"
+        ></motion.div> */}
+
         <div className="w-full px-7 sm:px-0 sm:w-4/6 flex flex-col items-start justify-center gap-2 mx-auto">
           <p className="text-base text-gray-400">Mar 2023 - Present</p>
           <p className="text-lg sm:text-xl text-gray-300 font-semibold tracking-wide">
@@ -39,8 +49,23 @@ const Experience = () => {
             <span className="text-yellow-500 opacity-95">Staff management</span>
           </p>
           <p className="text-sm sm:text-base text-gray-400">
-            Developed some static and responsive websites using NextJs from the
-            scratch. (abhiruchi.ca, basmatiindiancuisine.ca, neurallymed.com)
+            Developed some static and responsive websites with
+            internationalisation using NextJs and Tailwind from the scratch.{" "}
+            <span className="text-yellow-500 opacity-95">
+              (
+              <a href="https://truthcatcher.com" target="_blank">
+                truthcatcher.com
+              </a>
+              ,{" "}
+              <a href="https://www.abhiruchi.ca" target="_blank">
+                abhiruchi.ca
+              </a>
+              ,{" "}
+              <a href="https://basmatiindiancuisine.ca/" target="_blank">
+                basmatiindiancuisine.ca
+              </a>
+              )
+            </span>
           </p>
           <div className="flex items-center justify-start flex-wrap gap-3">
             {WielabsFulltimeTechStack.map((tech) => (
@@ -54,6 +79,7 @@ const Experience = () => {
           </div>
         </div>
 
+        {/* Wielabs Internship Experience */}
         <div className="w-full px-7 sm:px-0 sm:w-4/6 flex flex-col items-start justify-center gap-2 mx-auto">
           <p className="text-base text-gray-400">
             Dec 2022 - Feb 2023 (3 months)
