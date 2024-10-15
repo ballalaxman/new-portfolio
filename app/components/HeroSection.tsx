@@ -5,7 +5,7 @@ import Image from "next/image";
 import skills from "@/public/skills.png";
 
 const HeroSection = () => {
-  const age = calculateDuration(new Date(2022, 12, 1)); // December 01, 2022
+  const age = calculateDuration(new Date(2022, 11, 1)); // December 01, 2022
 
   return (
     <section
